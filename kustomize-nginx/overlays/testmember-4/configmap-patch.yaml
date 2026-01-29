@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: custom-index
-  namespace: guestbook
+  
 data:
   index.html: |
     <!DOCTYPE html>
