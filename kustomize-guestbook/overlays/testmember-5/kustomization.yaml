@@ -3,6 +3,10 @@ kind: Kustomization
 resources:
   - ../../base
 
+images:
+  - name: nginx
+    newName: nginx
+    newTag: "1.29.4" 
    
 patches:
   - path: configmap-patch.yaml

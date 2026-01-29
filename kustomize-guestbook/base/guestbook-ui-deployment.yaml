@@ -28,11 +28,9 @@ spec:
         - containerPort: 80
         volumeMounts:
             - name: nginx-conf
-              mountPath: /etc/nginx/nginx.conf
-              subPath: nginx.conf
-            - name: nginx-conf
+              mountPath: /etc/nginx
+            - name: html
               mountPath: /usr/share/nginx/html
-              subPath: index.html
       volumes:
       - name: nginx-conf
         configMap:
@@ -40,5 +38,6 @@ spec:
           items:
             - key: nginx.conf
               path: nginx.conf
-            - key: index.html
-              path: index.html
+      - name: html
+        configMap:
+          name: custom-index  

@@ -2,3 +2,8 @@ resources:
   - guestbook-ui-deployment.yaml
   - guestbook-ui-svc.yaml
   - configmap.yaml
+
+images:
+  - name: nginx
+    newName: nginx
+    newTag: "1.28.1" 
