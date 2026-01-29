@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: guestbook-kustomize
-  namespace: guestbook
+  
 spec:  
   template:
     spec:

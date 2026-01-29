@@ -3,6 +3,8 @@ resources:
   - guestbook-ui-svc.yaml
   - configmap.yaml
 
+namespace: flux-kustomize
+
 images:
   - name: nginx
     newName: nginx
