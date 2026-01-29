@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: guestbook-kustomize
+  namespace: guestbook
+spec:  
+  template:
+    spec:
+      tolerations:
+        - key: "mai/cpu"
+          operator: "Equal"
+          value: "true"
+          effect: "NoSchedule"
+        - key: "mai/compute"
+          operator: "Equal"
+          value: "true"
+          effect: "NoSchedule"
+      containers:
+      - name: nginx
+        resources:
+          limits:
+            cpu: "1"
+            memory: "1Gi"
+        
