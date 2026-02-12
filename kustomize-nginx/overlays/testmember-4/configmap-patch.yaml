@@ -8,9 +8,9 @@ data:
     <!DOCTYPE html>
     <html>
     <head>
-      <title>My Custom Page</title>
+      <title>My Demo Page</title>
     </head>
     <body>
-      <h1>Welcome to My Fourth Custom Kubernetes Site!</h1>
+      <h1>Welcome to My Fourth Demo Kubernetes Site!</h1>
     </body>
     </html>
